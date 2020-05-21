@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <link href="#" rel="stylesheet" text="css">
+    <title>Country</title>
+    <script >
+      function onSelect()
+      {
+        var x=document.getElementById("country");
+        var display=x.options[x.selectedIndex].text;
+        document.getElementById("txtvalue").value=display+" is your country";
+      }
+    </script>
+    <meta charset = "UTF-8" />
+  </head>
+  <body>
+    <h1>list</h1>
+    <form>
+       <fieldset>
+          <legend>Select your country</legend>
+          <p>
+             
+             <select id = "country" onchange="onSelect();">
+              <option >Select country</option>
+               <option value = "Kenya">Kenya</option>
+               <option value = "Congo">Congo</option>
+               <option value = "Togo">Togo</option>
+               <option value = "Ethiopia">Ethiopia</option>
+             </select>
+             <br/>
+             <input type="text" id="txtvalue" class="input" />
+             <br/>
+
+             
+
+   
+    
+             
+          </p>
+       </fieldset>
+    </form>
+  </body>
+</html>
